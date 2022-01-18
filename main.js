@@ -19,6 +19,7 @@ function data(url) {
         degree_icon = "fas fa-temperature-high";
       } else if (temp < 30 && temp > 4) {
         degree = "normal";
+        degree_icon="fas fa-temperature-low"
       } else {
         degree = "cold";
         degree_icon = "fas fa-temperature-low";
@@ -26,7 +27,7 @@ function data(url) {
 
       const markup = `
         <div class="city-info d-flex">
-          <h2 class="city"><span>${name}</span> <span>${sys.country}</span></h2>
+          <h2 class="city"><span>${name}</span> <br> <span>${sys.country}</span></h2>
           <p class="temp ${degree}"><i class="${degree_icon}"></i>  ${Math.floor(
         main.temp
       )}</p>
