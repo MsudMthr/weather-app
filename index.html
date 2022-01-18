@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>weather app</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
-<script src="main.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="bootstrapp 4/cssBootstrap/bootstrap-reboot.min.css"
+    />
+    <link rel="stylesheet" href="bootstrapp 4/cssBootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>weather</title>
+  </head>
+  <body>
+    <section class="container d-flex">
+      <section class="search-section col-4">
+        <h1>weather</h1>
+        <button id="myLocation"><i class="fas fa-home"></i> My Location</button>
+        <form>
+          <div class="search-city">
+            <input type="text" placeholder="Search" />
+            <button type="submit">
+              <i class="fas fas fa-search-location"></i> search location
+            </button>
+          </div>
+        </form>
+        <p class="msg"></p>
+      </section>
+      <section class="info col-6 offset-1">
+        
+      </section>
+    </section>
+  </body>
+  <script src="main.js"></script>
 </html>

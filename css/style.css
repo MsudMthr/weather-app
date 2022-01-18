@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #2c699a;
+}
+
+body .container {
+  width: 100%;
+  height: 575px;
+  background-color: #048ba8;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  padding: 20px;
+}
+
+body .container .search-section {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .search-section h1 {
+  padding: 10px;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+body .container .search-section button {
+  background-color: #54478c;
+  border: none;
+  margin: 20px 0;
+  height: 50px;
+  line-height: 50px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  border-radius: 50px;
+  width: 100%;
+  color: #f29e4c;
+  outline: none;
+}
+
+body .container .search-section form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .search-section form button {
+  background-color: #54478c;
+  border: none;
+  margin: 20px 0;
+  height: 50px;
+  line-height: 50px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  border-radius: 50px;
+  width: 100%;
+  color: #f29e4c;
+  outline: none;
+}
+
+body .container .search-section form .search-city {
+  margin-top: 40px;
+}
+
+body .container .search-section form .search-city input {
+  width: 100%;
+  height: 50px;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  padding: 0 50px;
+}
+
+body .container .search-section .msg {
+  font-size: 2rem;
+  color: #660708;
+  text-shadow: 2px 0px 20px #000;
+}
+
+body .container .info {
+  overflow: auto;
+}
+
+body .container .info li {
+  margin: 10px 0;
+  -webkit-box-shadow: 2px 0 20px #000;
+          box-shadow: 2px 0 20px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .info li .city-info {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+body .container .info li .city-info p {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+body .container .info li .city-info .cold {
+  color: #23cbf5;
+}
+
+body .container .info li .city-info .normal {
+  color: #eafbff;
+}
+
+body .container .info li .city-info .hot {
+  color: #f17a7c;
+}
+
+body .container .info li .city-info h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f5f3f4;
+}
+
+body .container .info li .description img {
+  width: 20%;
+  height: 20%;
+}
+
+body .container .info li .description p {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 20px;
+  color: #f5f3f4;
+}
+/*# sourceMappingURL=style.css.map */
