@@ -19,7 +19,7 @@ function data(url) {
         degree_icon = "fas fa-temperature-high";
       } else if (temp < 30 && temp > 4) {
         degree = "normal";
-        degree_icon="fas fa-temperature-low"
+        degree_icon = "fas fa-temperature-low";
       } else {
         degree = "cold";
         degree_icon = "fas fa-temperature-low";
@@ -28,9 +28,7 @@ function data(url) {
       const markup = `
         <div class="city-info d-flex">
           <h2 class="city"><span>${name}</span> <br> <span>${sys.country}</span></h2>
-          <p class="temp ${degree}"><i class="${degree_icon}"></i>  ${Math.floor(
-        main.temp
-      )}</p>
+          <p class="temp ${degree}"><i class="${degree_icon}"></i>  ${Math.floor(main.temp)} C</p>
         </div>
         <article class="description">
           <img src="${icon}" alt="weather" class="img-fluid" />
@@ -51,7 +49,7 @@ form.addEventListener("submit", (e) => {
   const key = "cc8c130060196ac7c9ae8e87361ade4f";
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputval}&appid=${key}&units=metric`;
   console.log(url);
-  
+
   data(url);
 
   input.value = "";
@@ -65,10 +63,10 @@ myLocation.addEventListener("click", (e) => {
       const longitude = position.coords.longitude;
       const key = "cc8c130060196ac7c9ae8e87361ade4f";
       const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}&units=metric`;
-     data(url);
+      data(url);
     },
     () => {
-      console.log("err");
+      msg.innerHTML = "sorry you blocked";
     }
   );
 });
